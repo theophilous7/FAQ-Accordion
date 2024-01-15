@@ -11,6 +11,9 @@ main{
 }
 .svg-bannerMobile{
     width: 100%;
+    background-color: rgb(31, 174, 90);
+    margin-left: 3px;
+    
 }
 .my-accordion{
     width: 80%;
@@ -24,6 +27,10 @@ main{
    padding: 25px;
    overflow: scroll;
 }
+section{
+    min-width: min-content;
+    margin: 15px;
+}
 .faq{
     display: flex;
 }
@@ -34,5 +41,9 @@ main{
 .question{
     font-weight: bolder;
     font-size: 1.2rem;
-   display:inline;
+   
+   background-color: red;
+}
+p{
+    font-size: 16px;
 }
