@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+   
+}
+.svg-bannerMobile{
+    width: 100%;
+}
+.my-accordion{
+    width: 80%;
+    min-height: fit-content;
+    height: 70vh;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+   left: 6px;
+   border-radius: 15px;
+   padding: 25px;
+   overflow: scroll;
+}
+.faq{
+    display: flex;
+}
+.faq > h1{
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.question{
+    font-weight: bolder;
+    font-size: 1.2rem;
+   display:inline;
+}
