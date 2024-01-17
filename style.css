@@ -3,28 +3,31 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: hsl(275, 100%, 97%);
+}
 main{
     width: 100%;
-    height: 100vh;
-    background-color: hsl(275, 100%, 97%);
-   
+    height: 120vh; 
+    overflow: hidden;
 }
 
 .my-accordion{
-    width: 80%;
-    min-height: fit-content;
+    max-width: 80%;
+    max-height: fit-content;
     height: 70vh;
     background-color: white;
     position: absolute;
     top: 130px;
-   left: 6px;
+   left: 36px;
    border-radius: 15px;
    padding: 25px;
-   overflow: scroll;
+   overflow-y: scroll;
 }
 
 .faq{
     display: flex;
+    margin-bottom: 20px;
 }
 .faq > h1{
     margin-left: 20px;
@@ -33,21 +36,68 @@ main{
 
 .svg-bannerMobile{
     width: 40%;
-    
     margin-left: 3px;
-   
+}
+section{
+    margin-top: 5px;
+    max-width: 40vh;
+    padding: 5px;
+    border: .1px solid black;
 }
 .question{
     font-weight: bolder;
     font-size: 1rem;
    display: flex;
-
 }
-
+.question:hover{
+    color: purple;
+    cursor: pointer;
+}
 p{
     font-size: 16px;
+    color: gray;
+    display: none;
+    margin-top: 15px;
 }
-#svg-one{
+#svg-one, #svg-two, #svg-three, #svg-four{
     font-size: 2rem;
-    width: 20%;
+}
+#svg-two{
+    margin-left: 55px;
+}
+
+@media(min-width: 970px){
+    .my-accordion{
+        max-width: 35%;
+        height: 70vh;
+        left: 350px;
+    }
+    #svg-one{
+        margin-left: 30px;
+    }
+    #svg-two{
+        margin-left: 210px;
+    }
+     #svg-three{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    #svg-four{
+        margin-left: 60px;
+    }
+}
+@media(min-width: 420px){
+    #svg-two{
+        margin-left: 180px;
+    }
+}
+@media(min-width: 520px){
+    #svg-two{
+        margin-left: 180px;
+    }
+}
+@media(min-width: 1024px){
+    #svg-two{
+        margin-left: 130px;
+    }
 }
